@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primaryVariant"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="-50dp"
+        android:contentDescription="@string/header"
+        android:scaleType="fitXY"
+        android:src="@drawable/header_img"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="@string/aplikasi_github_user"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="34dp"
+        android:textSize="24sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="14dp"
+        android:background="@drawable/custom_border2"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        tools:ignore="RelativeOverlap">
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="12sp"
+            android:textColor="@color/primary"
+            android:layout_marginEnd="12dp"
+            app:drawableTopCompat="@drawable/ic_baseline_settings_24" />
+
+        <TextView
+            android:id="@+id/tv_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/favorite"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="12sp"
+            android:textColor="@color/primary"
+            app:drawableTopCompat="@drawable/ic_baseline_favorite_24" />
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        app:iconifiedByDefault="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:searchIcon="@drawable/github_mark"
+        android:background="@drawable/custom_search"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="100dp"
+        />
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_below="@id/search"
+        android:layout_marginTop="55dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="220dp"
+            android:src="@drawable/search"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/info" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/info"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    <ScrollView
+        android:id="@+id/sv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="185dp"
+        android:elevation="2dp"
+        android:background="@drawable/custom_border"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="50dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_row_user" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="12dp"
+            android:text="@string/bffa_submission_munawir_fikri_al_akbari"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
