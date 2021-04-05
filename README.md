@@ -1,7 +1,7 @@
 # aplikasiGithubUser
 Aplikasi yang menampilkan list pengguna github dengan memanfaatkan API yang dipublikasikan oleh Github. Project ini merupakan tugas akhir dan final submission untuk 'Kelas Belajar Fundamental Aplikasi Android' nya Dicoding.
 
-![1](https://user-images.githubusercontent.com/46962764/113527142-cd0b0400-95e6-11eb-931b-c6c81cf1c0fb.png)
+<img src="https://user-images.githubusercontent.com/46962764/113527142-cd0b0400-95e6-11eb-931b-c6c81cf1c0fb.png" width="100" height="100">
 ![2](https://user-images.githubusercontent.com/46962764/113527145-ce3c3100-95e6-11eb-8bd7-f948973c7a9c.png)
 ![3](https://user-images.githubusercontent.com/46962764/113527147-cf6d5e00-95e6-11eb-8570-8179c05ff13a.png)
 ![4](https://user-images.githubusercontent.com/46962764/113527148-d09e8b00-95e6-11eb-90a9-edfb18f4d701.png)
